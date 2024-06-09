@@ -5,6 +5,8 @@ import cors from 'cors'
 import helmet from 'helmet'
 import cookieParser from 'cookie-parser'
 import path from 'path'
+import {Server} from 'socket.io'
+import {createServer} from 'http'
 
 //import files
 import config from './config'
@@ -19,6 +21,12 @@ const port = config.port || 3000
 app.use(morgan('common'))
 app.use(express.json())
 app.use(cookieParser())
+
+const httpServer = createServer(app)
+
+const io = new Server(httpServer, {
+	/* options */
+})
 
 app.use(
 	cors({

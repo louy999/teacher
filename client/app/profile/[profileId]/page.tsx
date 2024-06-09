@@ -6,14 +6,16 @@ import Exam from "./components/Exam";
 
 function page() {
   return (
-    <section className="container relative top-20 m-auto w-[95%]">
-      <div className="flex justify-between items-center flex-wrap md:flex-nowrap gap-3">
-        <Info />
-        <Timer />
-      </div>
-      <div className="flex justify-between items-center flex-wrap md:flex-nowrap gap-3  my-10 w-full ">
-        <Chapter />
-        <Exam />
+    <section className="container relative flex items-center justify-center  m-auto w-[95%] h-screen ">
+      <div>
+        <div className="flex justify-between   items-center flex-wrap md:flex-nowrap gap-3">
+          <Info />
+          <Timer />
+        </div>
+        <div className="flex justify-between items-center flex-wrap md:flex-nowrap gap-3  my-10 w-full ">
+          <Chapter />
+          <Exam />
+        </div>
       </div>
     </section>
   );

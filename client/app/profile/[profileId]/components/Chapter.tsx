@@ -2,7 +2,7 @@ import React from "react";
 
 function Chapter() {
   return (
-    <section className="shadow-lg p-3 rounded-md">
+    <section className="shadow-lg p-3 rounded-md w-full md:w-2/4">
       <div className="flex w-full overflow-x-auto overflow-y-scroll min-h-20 max-h-80">
         <table className="table-hover table max-w-4xl  ">
           <thead>

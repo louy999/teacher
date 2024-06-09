@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <div className="navbar md:w-2/4 md:fixed z-[456789]   md:left-1/2 md:translate-x-[-50%] px-3 rounded-md top-3">
       <div className="navbar-start">
-        <Link href="" className="navbar-item">
+        <Link href="/" className="navbar-item">
           {nameTeacher}
         </Link>
       </div>

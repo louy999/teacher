@@ -4,6 +4,7 @@ import Image from "next/image";
 import axiosClient from "../../utils/api";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Wave from "./components/wave";
 
 function Login() {
   const router = useRouter();
@@ -19,14 +20,15 @@ function Login() {
   };
 
   return (
-    <section className="bg-border h-[100vh]">
-      <main className="flex items-center justify-center h-full  text-center	 lg:text-start md:text-start max-sm:h-5/6	 px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
+    <section className="bg-border h-[100vh] overflow-hidden">
+      {/* <Wave /> */}
+      <main className="flex items-center justify-center h-full  text-center	 lg:text-start md:text-start max-sm:h-5/6	 px-8 py-8 sm:px-12 z-20 relative lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
         <div className="max-w-xl lg:max-w-3xl">
           <h1 className="mt-7 text-2xl font-bold text-content1 sm:text-3xl md:text-4xl">
             <span className=" font-extrabold text-p">hi hello</span>
           </h1>
 
-          <form className="mx-auto flex w-full max-w-lg flex-col rounded-xl border border-border bg-backgroundSecondary p-4 sm:p-16">
+          <form className="mx-auto flex w-full max-w-lg flex-col rounded-xl border border-border bg-backgroundSecondary p-4 sm:p-16 ">
             <div className="form-group">
               <Link href="/" className="block text-p">
                 <span className="sr-only">Home</span>
